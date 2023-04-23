@@ -20,7 +20,7 @@ function Booklist() {
 
 
     useEffect(() => {
-        fetch("http://localhost:8080/availablebooks", {
+        fetch("https://boolist-backend.onrender.com/availablebooks", {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": "Bearer " + localStorage.getItem("token")
@@ -36,7 +36,7 @@ function Booklist() {
     const goToEdit = (bookTitle) => {
         console.log(bookTitle)
         showBookRecord(true)
-        fetch("http://localhost:8080/editbook", {
+        fetch("https://boolist-backend.onrender.com/editbook", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -56,7 +56,7 @@ function Booklist() {
 
     const deleteBook = (bookId) => {
         console.log(bookId)
-        fetch("http://localhost:8080/deletebook", {
+        fetch("https://boolist-backend.onrender.com/deletebook", {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
@@ -94,7 +94,7 @@ function Booklist() {
     // }
 
     // const updateBookInformation = (id)=>{
-    //     fetch("http://localhost:8080/updatebookinfo", {
+    //     fetch("https://boolist-backend.onrender.com/updatebookinfo", {
     //         method: "PUT",
     //         headers: {
     //             "Content-Type": "application/json",

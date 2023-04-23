@@ -19,7 +19,7 @@ function Register(){
 
     const Register =(username,userPass)=>{
         console.log(username,userPass)
-        fetch("http://localhost:8080/register",{
+        fetch("https://boolist-backend.onrender.com/register",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

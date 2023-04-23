@@ -25,7 +25,7 @@ function AddBook(){
 
 
     const addBook = ()=>{
-        fetch("http://localhost:8080/addbook",{
+        fetch("https://boolist-backend.onrender.com/addbook",{
             method:"POST",
             headers:{
                 "Authorization":"Bearer "+localStorage.getItem("token"),

@@ -8,7 +8,7 @@ function Login(){
         console.log(name,password)
         e.preventDefault()
 
-        fetch("http://localhost:8080/signin",{
+        fetch("https://boolist-backend.onrender.com/signin",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
