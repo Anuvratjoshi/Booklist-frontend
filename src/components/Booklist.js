@@ -23,7 +23,7 @@ function Booklist() {
 
         const token = localStorage.getItem("token")
         if(token){
-            fetch("http://localhost:8080/availablebooks", {
+            fetch("https://boolist-backend.onrender.com/availablebooks", {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": "Bearer " + localStorage.getItem("token")
