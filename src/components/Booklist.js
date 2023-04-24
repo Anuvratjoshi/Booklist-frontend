@@ -20,7 +20,10 @@ function Booklist() {
 
 
     useEffect(() => {
-        fetch("https://boolist-backend.onrender.com/availablebooks", {
+
+        const token = localStorage.getItem("token")
+        if(token){
+            fetch("http://localhost:8080/availablebooks", {
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": "Bearer " + localStorage.getItem("token")
@@ -30,6 +33,12 @@ function Booklist() {
                 console.log(result)
                 setBooks(result)
             })
+        }
+        else{
+            navigate("/")
+            
+        }
+        
     }, [])
 
 
