@@ -48,12 +48,12 @@ function Register(){
             }} value={name}  required/>
         </div>
         <div>
-            <input type="password" onChange={(e)=>{
+            <input placeholder="Password" type="password" onChange={(e)=>{
                 setPassword(e.target.value)
             }} value={password} required/>
         </div>
         <div>
-            <input type="password" onChange={(e)=>{
+            <input placeholder="Confirm Password" type="password" onChange={(e)=>{
                 setConfirmPassword(e.target.value)
             }} value={confirmPassword} required />
         </div>

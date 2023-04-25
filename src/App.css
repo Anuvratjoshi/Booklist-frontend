@@ -5,6 +5,8 @@
   box-sizing: border-box;
   text-align: center;
   padding: 0 2rem;
+  background-color: rgb(115, 184, 184);
+  box-shadow: 5px 10px 8px 6px;
 }
 .login-form input{
   width: 100%;
