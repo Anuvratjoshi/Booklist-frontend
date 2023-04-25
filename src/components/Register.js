@@ -40,7 +40,10 @@ function Register(){
             }
         })
     }
-    return <form className="register-form" onSubmit={e=>submitHandler(e)}>
+    return<>
+    <b>Note: <span style={{color:"red"}}>This project is deployed on render kindly wait for few seconds during registration and login</span></b> 
+
+    <form className="register-form" onSubmit={e=>submitHandler(e)}>
         <h5>Register</h5>
         <div>
             <input placeholder="Username" type="email" onChange={(e)=>{
@@ -62,5 +65,6 @@ function Register(){
         </button>
         <Link to="/login"><h6 style={{cursor:"pointer"}}>Member Login</h6></Link>
     </form>
+    </>
 }
 export default Register
